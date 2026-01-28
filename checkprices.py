@@ -23,6 +23,9 @@ def check_prices():
         writer = csv.writer(file)
         writer.writerow([datetime.date.today(), "A Light in the Attic", price])
 
+if __name__ == "__main__":
+    check_prices()
+
 
 
 
