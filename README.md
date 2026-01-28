@@ -24,6 +24,11 @@ Compares it with our Internal Reference Price.
 
 Alerting: Sends an immediate warning only if the competitor is cheaper.
 
+## 🛠 Tech Stack
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
+![BS4](https://img.shields.io/badge/Scraping-BeautifulSoup-green)
+![CSV](https://img.shields.io/badge/Storage-CSV%2FExcel-lightgrey)
+
 
 ## Process flow
 
@@ -37,3 +42,9 @@ graph TD;
     Decision -- No --> Log["Log Data to CSV"];
     Alert --> End([Stop]);
     Log --> End([Stop]);
+
+
+
+
+
+
