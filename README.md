@@ -23,3 +23,17 @@ Scrapes the exact price from competitor product pages.
 Compares it with our Internal Reference Price.
 
 Alerting: Sends an immediate warning only if the competitor is cheaper.
+
+
+## Process flow
+
+```mermaid
+graph TD;
+    Start([Start: Run Script at 08:00]) --> Fetch[Fetch Product Page];
+    Fetch --> Parse[Parse HTML & Extract Price];
+    Parse --> Clean[Clean Data (e.g. '$50.00' -> 50.00)];
+    Clean --> Decision{Price < Target?};
+    Decision -- Yes --> Alert[ALERT: Send Email];
+    Decision -- No --> Log[Log Data to CSV];
+    Alert --> End([Stop]);
+    Log --> End;
