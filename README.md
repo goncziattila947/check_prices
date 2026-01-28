@@ -30,6 +30,16 @@ Alerting: Sends an immediate warning only if the competitor is cheaper.
 ![CSV](https://img.shields.io/badge/Storage-CSV%2FExcel-lightgrey)
 
 
+
+## 📊 Data Output Sample
+Below is an example of the automated report generated for the marketing team. This dataset is used to support immediate pricing decisions.
+
+<img width="295" height="102" alt="Screenshot 2026-01-28 014334" src="https://github.com/user-attachments/assets/e7b4911b-8fe9-4df0-ba37-3ebe5a996f7d" />
+
+*(The screenshot demonstrates how the system tracks daily price fluctuations.)*
+
+
+
 ## Process flow
 
 ```mermaid
@@ -42,6 +52,15 @@ graph TD;
     Decision -- No --> Log["Log Data to CSV"];
     Alert --> End([Stop]);
     Log --> End([Stop]);
+
+
+
+
+
+
+
+
+
 
 
 
